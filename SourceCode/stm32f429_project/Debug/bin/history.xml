@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="4.9.3 -mcpu=cortex-m4 -mthumb -g2 -nostartfiles -Map=stm32f429_project.map -O0 --gc-sections -LC:\Users\michael\AppData\Roaming\CooCox\CoIDE\configuration\ProgramData\ADC_SD_Logger -TC:\Users\michael\AppData\Roaming\CooCox\CoIDE\configuration\ProgramData\ADC_SD_Logger/arm-gcc-link.ld -g">
+      <target file="stm32f429_project.elf" lastModified="14d0feee34d">
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="14d0fedb404"/>
+         <source file="..\obj\stm32f4xx_usart.o" lastModified="14d0fedab89"/>
+         <source file="..\obj\stm32f4xx_dma.o" lastModified="14d0fedb61a"/>
+         <source file="..\obj\stm32f4xx_can.o" lastModified="14d0fedacde"/>
+         <source file="..\obj\stm32f4xx_cryp_aes.o" lastModified="14d0fedaa48"/>
+         <source file="..\obj\stm32f4xx_ltdc.o" lastModified="14d0fedaf11"/>
+         <source file="..\obj\stm32f4xx_flash.o" lastModified="14d0fedb4b6"/>
+         <source file="..\obj\stm32f4xx_spi.o" lastModified="14d0fedb738"/>
+         <source file="..\obj\stm32f4xx_hash.o" lastModified="14d0feda94e"/>
+         <source file="..\obj\stm32f4xx_cryp_des.o" lastModified="14d0fedb2f9"/>
+         <source file="..\obj\stm32f4xx_dbgmcu.o" lastModified="14d0fedbb9d"/>
+         <source file="..\obj\stm32f4xx_crc.o" lastModified="14d0fedafc8"/>
+         <source file="..\obj\misc.o" lastModified="14d0fedb912"/>
+         <source file="..\obj\stm32f4xx_iwdg.o" lastModified="14d0fedb04c"/>
+         <source file="..\obj\stm32f4xx_adc.o" lastModified="14d0fedb21c"/>
+         <source file="..\obj\stm32f4xx_fmc.o" lastModified="14d0fedb6b2"/>
+         <source file="..\obj\stm32f4xx_i2c.o" lastModified="14d0fedb7cc"/>
+         <source file="..\obj\stm32f4xx_dac.o" lastModified="14d0fedae6a"/>
+         <source file="..\obj\stm32f4xx_wwdg.o" lastModified="14d0fedad4d"/>
+         <source file="..\obj\stm32f4xx_rtc.o" lastModified="14d0fedb9dd"/>
+         <source file="..\obj\stm32f4xx_dcmi.o" lastModified="14d0fedb28a"/>
+         <source file="..\obj\stm32f4xx_syscfg.o" lastModified="14d0feda777"/>
+         <source file="..\obj\stm32f4xx_hash_sha1.o" lastModified="14d0fedaad7"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="14d0fedaf59"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="14d0fedb183"/>
+         <source file="..\obj\stm32f4xx_sai.o" lastModified="14d0fedb540"/>
+         <source file="..\obj\stm32f4xx_pwr.o" lastModified="14d0fedac21"/>
+         <source file="..\obj\stm32f4xx_cryp.o" lastModified="14d0fedb38d"/>
+         <source file="..\obj\stm32f4xx_sdio.o" lastModified="14d0feda81d"/>
+         <source file="..\obj\stm32f4xx_exti.o" lastModified="14d0fedb8a1"/>
+         <source file="..\obj\stm32f4xx_cryp_tdes.o" lastModified="14d0fedba48"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="14d0fedb5a1"/>
+         <source file="..\obj\stm32f4xx_rng.o" lastModified="14d0fedb837"/>
+         <source file="..\obj\stm32f4xx_hash_md5.o" lastModified="14d0fedaddf"/>
+         <source file="..\obj\stm32f4xx_tim.o" lastModified="14d0fedbb3d"/>
+         <source file="..\obj\stm32f4xx_dma2d.o" lastModified="14d0feda8bf"/>
+         <source file="..\obj\main.o" lastModified="14d0fedb0c9"/>
+      </target>
+   </processor>
+</history>
