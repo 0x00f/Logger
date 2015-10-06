@@ -1,0 +1,28 @@
+\hypertarget{file__handler_8h}{}\section{C\+:/\+Users/michael/\+Dropbox/6. Semester/\+Bachelor Arbeit/\+S\+T\+M32\+F4\+\_\+\+Datenlogger/\+Source\+Code/file\+\_\+handler.h File Reference}
+\label{file__handler_8h}\index{C\+:/\+Users/michael/\+Dropbox/6. Semester/\+Bachelor Arbeit/\+S\+T\+M32\+F4\+\_\+\+Datenlogger/\+Source\+Code/file\+\_\+handler.\+h@{C\+:/\+Users/michael/\+Dropbox/6. Semester/\+Bachelor Arbeit/\+S\+T\+M32\+F4\+\_\+\+Datenlogger/\+Source\+Code/file\+\_\+handler.\+h}}
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{group__file__handler_ga9efd801bbf5576d6f09ebb7281fd4d4c}{Mount\+\_\+\+File\+\_\+\+System} ()
+\begin{DoxyCompactList}\small\item\em Checks if a file system can be mounted on external flash. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{group__file__handler_ga8dca3491a9ab267d90657e7d1f76c8b1}{Get\+\_\+\+File\+System\+\_\+\+Label} ()
+\begin{DoxyCompactList}\small\item\em Returns the name of the file system (label) sd card. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{group__file__handler_ga891f0548fd983c0af10d8d38e45f6aaa}{Gen\+\_\+\+Filename} ()
+\begin{DoxyCompactList}\small\item\em Generates a new filename for a new measurement. It either retrieves the filename from backup sram, or if sram is not initialized, uses the default \char`\"{}measurement\char`\"{}. The filename has the format\+: \char`\"{}filename\char`\"{}\+\_\+n, where n is an integer that is incremented for each new measurement. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{group__file__handler_ga3422415ffcfdb9ea67c40899bb673a05}{Get\+\_\+\+All\+\_\+\+Filenames} ()
+\begin{DoxyCompactList}\small\item\em Generates a list of filenames of all found files. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{group__file__handler_ga4668281938481f362ee46f7bbf829efc}{volume} \mbox{[}15\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Michael A. Schulze  \href{mailto:m.schulze@uni-bremen.de}{\tt m.\+schulze@uni-\/bremen.\+de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+v1.\+0, compiled with arm-\/none-\/eabi-\/gcc v4.\+9.\+3 20150303 
+\end{DoxyVersion}

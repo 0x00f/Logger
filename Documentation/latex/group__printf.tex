@@ -1,0 +1,451 @@
+\hypertarget{group__printf}{}\section{Printf}
+\label{group__printf}\index{Printf@{Printf}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__printf_ga220f38b26fa99d4d91b574f42d991516}{M\+A\+X\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+S\+I\+Z\+E}~100
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__printf_gaf9aace1b44b73111e15aa39f06f43456}{\+\_\+\+\_\+attribute\+\_\+\+\_\+} ((weak))
+\begin{DoxyCompactList}\small\item\em Transmit a char, if you want to use \hyperlink{group__printf_gad6c265f6d41266cbb62035915f9c0030}{printf()}, you need implement this function. \end{DoxyCompactList}\item 
+signed int \hyperlink{group__printf_ga9d6957a52d69935cd92755844e9252be}{Put\+Char} (char $\ast$p\+Str, char c)
+\begin{DoxyCompactList}\small\item\em Writes a character inside the given string. Returns 1. \end{DoxyCompactList}\item 
+signed int \hyperlink{group__printf_ga9692c423423d4787d69f090a359c5644}{Put\+String} (char $\ast$p\+Str, const char $\ast$p\+Source)
+\begin{DoxyCompactList}\small\item\em Writes a string inside the given string. \end{DoxyCompactList}\item 
+signed int \hyperlink{group__printf_gafeda5b1cd1c8e201b2fc997b35d03281}{Put\+Unsigned\+Int} (char $\ast$p\+Str, char fill, signed int width, unsigned int value)
+\begin{DoxyCompactList}\small\item\em Writes an unsigned int inside the given string, using the provided fill \& width parameters. \end{DoxyCompactList}\item 
+signed int \hyperlink{group__printf_gae7337166e7d8bcc7d589e63777ae2541}{Put\+Signed\+Int} (char $\ast$p\+Str, char fill, signed int width, signed int value)
+\begin{DoxyCompactList}\small\item\em Writes a signed int inside the given string, using the provided fill \& width parameters. \end{DoxyCompactList}\item 
+signed int \hyperlink{group__printf_ga3b3bdb18a334228eb2b08b1a70c1a62a}{Put\+Hexa} (char $\ast$p\+Str, char fill, signed int width, unsigned char maj, unsigned int value)
+\begin{DoxyCompactList}\small\item\em Writes an hexadecimal value into a string, using the given fill, width \& capital parameters. \end{DoxyCompactList}\item 
+signed int \hyperlink{group__printf_ga8f2d28f08e5d66db9a14ed70cb1f4220}{vsnprintf} (char $\ast$p\+Str, size\+\_\+t length, const char $\ast$p\+Format, va\+\_\+list ap)
+\begin{DoxyCompactList}\small\item\em Stores the result of a formatted string into another string. Format arguments are given in a va\+\_\+list instance. \end{DoxyCompactList}\item 
+signed int \hyperlink{group__printf_gae4d7a9a581baef0b2b2174383580ab15}{snprintf} (char $\ast$p\+String, size\+\_\+t length, const char $\ast$p\+Format,...)
+\begin{DoxyCompactList}\small\item\em Stores the result of a formatted string into another string. Format arguments are given in a va\+\_\+list instance. \end{DoxyCompactList}\item 
+signed int \hyperlink{group__printf_gac2bd6c4c9ad1b563bdcd20f18a36811a}{vsprintf} (char $\ast$p\+String, const char $\ast$p\+Format, va\+\_\+list ap)
+\begin{DoxyCompactList}\small\item\em Stores the result of a formatted string into another string. Format arguments are given in a va\+\_\+list instance. \end{DoxyCompactList}\item 
+signed int \hyperlink{group__printf_ga4c938d1cedba90cbc8107400ebea6100}{vfprintf} (F\+I\+L\+E $\ast$p\+Stream, const char $\ast$p\+Format, va\+\_\+list ap)
+\begin{DoxyCompactList}\small\item\em Outputs a formatted string on the given stream. Format arguments are given in a va\+\_\+list instance. \end{DoxyCompactList}\item 
+signed int \hyperlink{group__printf_gadc27df6594a246219000f9d2a584a3be}{vprintf} (const char $\ast$p\+Format, va\+\_\+list ap)
+\begin{DoxyCompactList}\small\item\em Outputs a formatted string on the D\+B\+G\+U stream. Format arguments are given in a va\+\_\+list instance. \end{DoxyCompactList}\item 
+signed int \hyperlink{group__printf_ga714a7aeb0b480bc7cc85c1685964861f}{fprintf} (F\+I\+L\+E $\ast$p\+Stream, const char $\ast$p\+Format,...)
+\begin{DoxyCompactList}\small\item\em Outputs a formatted string on the given stream, using a variable number of arguments. \end{DoxyCompactList}\item 
+signed int \hyperlink{group__printf_gad6c265f6d41266cbb62035915f9c0030}{printf} (const char $\ast$p\+Format,...)
+\begin{DoxyCompactList}\small\item\em Outputs a formatted string on the D\+B\+G\+U stream, using a variable number of arguments. \end{DoxyCompactList}\item 
+signed int \hyperlink{group__printf_ga2ab9fb00bf66223b1a3f334376963100}{sprintf} (char $\ast$p\+Str, const char $\ast$p\+Format,...)
+\begin{DoxyCompactList}\small\item\em Writes a formatted string inside another string. \end{DoxyCompactList}\item 
+signed int \hyperlink{group__printf_ga5a8c5f197e584138be351a4437f67689}{puts} (const char $\ast$p\+Str)
+\begin{DoxyCompactList}\small\item\em Outputs a string on stdout. \end{DoxyCompactList}\item 
+signed int \hyperlink{group__printf_ga25c4b74226a8a3a0d6eef3a072be087b}{fputc} (signed int c, F\+I\+L\+E $\ast$p\+Stream)
+\begin{DoxyCompactList}\small\item\em Implementation of fputc using the D\+B\+G\+U as the standard output. Required for \hyperlink{group__printf_gad6c265f6d41266cbb62035915f9c0030}{printf()}. \end{DoxyCompactList}\item 
+signed int \hyperlink{group__printf_gad870e26ae50d712bb504aa4b067802f4}{fputs} (const char $\ast$p\+Str, F\+I\+L\+E $\ast$p\+Stream)
+\begin{DoxyCompactList}\small\item\em Implementation of fputs using the D\+B\+G\+U as the standard output. Required for \hyperlink{group__printf_gad6c265f6d41266cbb62035915f9c0030}{printf()}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \+\_\+reent \hyperlink{group__printf_ga933442104e916763ad534cd32e42bbae}{r} = \{0, (F\+I\+L\+E $\ast$) 0, (F\+I\+L\+E $\ast$) 1, (F\+I\+L\+E $\ast$) 0\}
+\item 
+\hypertarget{group__printf_ga961919482965d7c4c2c243439dd036df}{}struct \+\_\+reent $\ast$ {\bfseries \+\_\+impure\+\_\+ptr} = \&\hyperlink{group__printf_ga933442104e916763ad534cd32e42bbae}{r}\label{group__printf_ga961919482965d7c4c2c243439dd036df}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{group__printf_ga220f38b26fa99d4d91b574f42d991516}{}\index{Printf@{Printf}!M\+A\+X\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+S\+I\+Z\+E@{M\+A\+X\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+S\+I\+Z\+E}}
+\index{M\+A\+X\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+S\+I\+Z\+E@{M\+A\+X\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+S\+I\+Z\+E}!Printf@{Printf}}
+\subsubsection[{M\+A\+X\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+S\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+X\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+S\+I\+Z\+E~100}\label{group__printf_ga220f38b26fa99d4d91b574f42d991516}
+Maximum string size allowed (in bytes). 
+
+\subsection{Function Documentation}
+\hypertarget{group__printf_gaf9aace1b44b73111e15aa39f06f43456}{}\index{Printf@{Printf}!\+\_\+\+\_\+attribute\+\_\+\+\_\+@{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+attribute\+\_\+\+\_\+@{\+\_\+\+\_\+attribute\+\_\+\+\_\+}!Printf@{Printf}}
+\subsubsection[{\+\_\+\+\_\+attribute\+\_\+\+\_\+((weak))}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+attribute\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{(weak)}]{}
+\end{DoxyParamCaption}
+)}\label{group__printf_gaf9aace1b44b73111e15aa39f06f43456}
+
+
+Transmit a char, if you want to use \hyperlink{group__printf_gad6c265f6d41266cbb62035915f9c0030}{printf()}, you need implement this function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Str} & Storage string. \\
+\hline
+{\em c} & Character to write. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group__printf_ga714a7aeb0b480bc7cc85c1685964861f}{}\index{Printf@{Printf}!fprintf@{fprintf}}
+\index{fprintf@{fprintf}!Printf@{Printf}}
+\subsubsection[{fprintf(\+F\+I\+L\+E $\ast$p\+Stream, const char $\ast$p\+Format,...)}]{\setlength{\rightskip}{0pt plus 5cm}signed int fprintf (
+\begin{DoxyParamCaption}
+\item[{F\+I\+L\+E $\ast$}]{p\+Stream, }
+\item[{const char $\ast$}]{p\+Format, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\label{group__printf_ga714a7aeb0b480bc7cc85c1685964861f}
+
+
+Outputs a formatted string on the given stream, using a variable number of arguments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Stream} & Output stream. \\
+\hline
+{\em p\+Format} & Format string. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group__printf_ga25c4b74226a8a3a0d6eef3a072be087b}{}\index{Printf@{Printf}!fputc@{fputc}}
+\index{fputc@{fputc}!Printf@{Printf}}
+\subsubsection[{fputc(signed int c, F\+I\+L\+E $\ast$p\+Stream)}]{\setlength{\rightskip}{0pt plus 5cm}signed int fputc (
+\begin{DoxyParamCaption}
+\item[{signed int}]{c, }
+\item[{F\+I\+L\+E $\ast$}]{p\+Stream}
+\end{DoxyParamCaption}
+)}\label{group__printf_ga25c4b74226a8a3a0d6eef3a072be087b}
+
+
+Implementation of fputc using the D\+B\+G\+U as the standard output. Required for \hyperlink{group__printf_gad6c265f6d41266cbb62035915f9c0030}{printf()}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Character to write. \\
+\hline
+{\em p\+Stream} & Output stream. \\
+\hline
+{\em The} & character written if successful, or -\/1 if the output stream is not stdout or stderr. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group__printf_gad870e26ae50d712bb504aa4b067802f4}{}\index{Printf@{Printf}!fputs@{fputs}}
+\index{fputs@{fputs}!Printf@{Printf}}
+\subsubsection[{fputs(const char $\ast$p\+Str, F\+I\+L\+E $\ast$p\+Stream)}]{\setlength{\rightskip}{0pt plus 5cm}signed int fputs (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\+Str, }
+\item[{F\+I\+L\+E $\ast$}]{p\+Stream}
+\end{DoxyParamCaption}
+)}\label{group__printf_gad870e26ae50d712bb504aa4b067802f4}
+
+
+Implementation of fputs using the D\+B\+G\+U as the standard output. Required for \hyperlink{group__printf_gad6c265f6d41266cbb62035915f9c0030}{printf()}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Str} & String to write. \\
+\hline
+{\em p\+Stream} & Output stream.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of characters written if successful, or -\/1 if the output stream is not stdout or stderr. 
+\end{DoxyReturn}
+\hypertarget{group__printf_gad6c265f6d41266cbb62035915f9c0030}{}\index{Printf@{Printf}!printf@{printf}}
+\index{printf@{printf}!Printf@{Printf}}
+\subsubsection[{printf(const char $\ast$p\+Format,...)}]{\setlength{\rightskip}{0pt plus 5cm}signed int printf (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\+Format, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\label{group__printf_gad6c265f6d41266cbb62035915f9c0030}
+
+
+Outputs a formatted string on the D\+B\+G\+U stream, using a variable number of arguments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Format} & Format string. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group__printf_ga9d6957a52d69935cd92755844e9252be}{}\index{Printf@{Printf}!Put\+Char@{Put\+Char}}
+\index{Put\+Char@{Put\+Char}!Printf@{Printf}}
+\subsubsection[{Put\+Char(char $\ast$p\+Str, char c)}]{\setlength{\rightskip}{0pt plus 5cm}signed int Put\+Char (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{p\+Str, }
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)}\label{group__printf_ga9d6957a52d69935cd92755844e9252be}
+
+
+Writes a character inside the given string. Returns 1. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Str} & Storage string. \\
+\hline
+{\em c} & Character to write. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group__printf_ga3b3bdb18a334228eb2b08b1a70c1a62a}{}\index{Printf@{Printf}!Put\+Hexa@{Put\+Hexa}}
+\index{Put\+Hexa@{Put\+Hexa}!Printf@{Printf}}
+\subsubsection[{Put\+Hexa(char $\ast$p\+Str, char fill, signed int width, unsigned char maj, unsigned int value)}]{\setlength{\rightskip}{0pt plus 5cm}signed int Put\+Hexa (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{p\+Str, }
+\item[{char}]{fill, }
+\item[{signed int}]{width, }
+\item[{unsigned char}]{maj, }
+\item[{unsigned int}]{value}
+\end{DoxyParamCaption}
+)}\label{group__printf_ga3b3bdb18a334228eb2b08b1a70c1a62a}
+
+
+Writes an hexadecimal value into a string, using the given fill, width \& capital parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Str} & Storage string. \\
+\hline
+{\em fill} & Fill character. \\
+\hline
+{\em width} & Minimum integer width. \\
+\hline
+{\em maj} & Indicates if the letters must be printed in lower-\/ or upper-\/case. \\
+\hline
+{\em value} & Hexadecimal value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of char written 
+\end{DoxyReturn}
+\hypertarget{group__printf_ga5a8c5f197e584138be351a4437f67689}{}\index{Printf@{Printf}!puts@{puts}}
+\index{puts@{puts}!Printf@{Printf}}
+\subsubsection[{puts(const char $\ast$p\+Str)}]{\setlength{\rightskip}{0pt plus 5cm}signed int puts (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\+Str}
+\end{DoxyParamCaption}
+)}\label{group__printf_ga5a8c5f197e584138be351a4437f67689}
+
+
+Outputs a string on stdout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Str} & String to output. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group__printf_gae7337166e7d8bcc7d589e63777ae2541}{}\index{Printf@{Printf}!Put\+Signed\+Int@{Put\+Signed\+Int}}
+\index{Put\+Signed\+Int@{Put\+Signed\+Int}!Printf@{Printf}}
+\subsubsection[{Put\+Signed\+Int(char $\ast$p\+Str, char fill, signed int width, signed int value)}]{\setlength{\rightskip}{0pt plus 5cm}signed int Put\+Signed\+Int (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{p\+Str, }
+\item[{char}]{fill, }
+\item[{signed int}]{width, }
+\item[{signed int}]{value}
+\end{DoxyParamCaption}
+)}\label{group__printf_gae7337166e7d8bcc7d589e63777ae2541}
+
+
+Writes a signed int inside the given string, using the provided fill \& width parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Str} & Storage string. \\
+\hline
+{\em fill} & Fill character. \\
+\hline
+{\em width} & Minimum integer width. \\
+\hline
+{\em value} & Signed integer value. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group__printf_ga9692c423423d4787d69f090a359c5644}{}\index{Printf@{Printf}!Put\+String@{Put\+String}}
+\index{Put\+String@{Put\+String}!Printf@{Printf}}
+\subsubsection[{Put\+String(char $\ast$p\+Str, const char $\ast$p\+Source)}]{\setlength{\rightskip}{0pt plus 5cm}signed int Put\+String (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{p\+Str, }
+\item[{const char $\ast$}]{p\+Source}
+\end{DoxyParamCaption}
+)}\label{group__printf_ga9692c423423d4787d69f090a359c5644}
+
+
+Writes a string inside the given string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Str} & Storage string. \\
+\hline
+{\em p\+Source} & Source string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The size of the written 
+\end{DoxyReturn}
+\hypertarget{group__printf_gafeda5b1cd1c8e201b2fc997b35d03281}{}\index{Printf@{Printf}!Put\+Unsigned\+Int@{Put\+Unsigned\+Int}}
+\index{Put\+Unsigned\+Int@{Put\+Unsigned\+Int}!Printf@{Printf}}
+\subsubsection[{Put\+Unsigned\+Int(char $\ast$p\+Str, char fill, signed int width, unsigned int value)}]{\setlength{\rightskip}{0pt plus 5cm}signed int Put\+Unsigned\+Int (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{p\+Str, }
+\item[{char}]{fill, }
+\item[{signed int}]{width, }
+\item[{unsigned int}]{value}
+\end{DoxyParamCaption}
+)}\label{group__printf_gafeda5b1cd1c8e201b2fc997b35d03281}
+
+
+Writes an unsigned int inside the given string, using the provided fill \& width parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Str} & Storage string. \\
+\hline
+{\em fill} & Fill character. \\
+\hline
+{\em width} & Minimum integer width. \\
+\hline
+{\em value} & Integer value. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group__printf_gae4d7a9a581baef0b2b2174383580ab15}{}\index{Printf@{Printf}!snprintf@{snprintf}}
+\index{snprintf@{snprintf}!Printf@{Printf}}
+\subsubsection[{snprintf(char $\ast$p\+String, size\+\_\+t length, const char $\ast$p\+Format,...)}]{\setlength{\rightskip}{0pt plus 5cm}signed int snprintf (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{p\+String, }
+\item[{size\+\_\+t}]{length, }
+\item[{const char $\ast$}]{p\+Format, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\label{group__printf_gae4d7a9a581baef0b2b2174383580ab15}
+
+
+Stores the result of a formatted string into another string. Format arguments are given in a va\+\_\+list instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Str} & Destination string. \\
+\hline
+{\em length} & Length of Destination string. \\
+\hline
+{\em p\+Format} & Format string. \\
+\hline
+{\em ...} & Other arguments\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of characters written. 
+\end{DoxyReturn}
+\hypertarget{group__printf_ga2ab9fb00bf66223b1a3f334376963100}{}\index{Printf@{Printf}!sprintf@{sprintf}}
+\index{sprintf@{sprintf}!Printf@{Printf}}
+\subsubsection[{sprintf(char $\ast$p\+Str, const char $\ast$p\+Format,...)}]{\setlength{\rightskip}{0pt plus 5cm}signed int sprintf (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{p\+Str, }
+\item[{const char $\ast$}]{p\+Format, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\label{group__printf_ga2ab9fb00bf66223b1a3f334376963100}
+
+
+Writes a formatted string inside another string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Str} & torage string. \\
+\hline
+{\em p\+Format} & Format string. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group__printf_ga4c938d1cedba90cbc8107400ebea6100}{}\index{Printf@{Printf}!vfprintf@{vfprintf}}
+\index{vfprintf@{vfprintf}!Printf@{Printf}}
+\subsubsection[{vfprintf(\+F\+I\+L\+E $\ast$p\+Stream, const char $\ast$p\+Format, va\+\_\+list ap)}]{\setlength{\rightskip}{0pt plus 5cm}signed int vfprintf (
+\begin{DoxyParamCaption}
+\item[{F\+I\+L\+E $\ast$}]{p\+Stream, }
+\item[{const char $\ast$}]{p\+Format, }
+\item[{va\+\_\+list}]{ap}
+\end{DoxyParamCaption}
+)}\label{group__printf_ga4c938d1cedba90cbc8107400ebea6100}
+
+
+Outputs a formatted string on the given stream. Format arguments are given in a va\+\_\+list instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Stream} & Output stream. \\
+\hline
+{\em p\+Format} & Format string \\
+\hline
+{\em ap} & Argument list. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group__printf_gadc27df6594a246219000f9d2a584a3be}{}\index{Printf@{Printf}!vprintf@{vprintf}}
+\index{vprintf@{vprintf}!Printf@{Printf}}
+\subsubsection[{vprintf(const char $\ast$p\+Format, va\+\_\+list ap)}]{\setlength{\rightskip}{0pt plus 5cm}signed int vprintf (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\+Format, }
+\item[{va\+\_\+list}]{ap}
+\end{DoxyParamCaption}
+)}\label{group__printf_gadc27df6594a246219000f9d2a584a3be}
+
+
+Outputs a formatted string on the D\+B\+G\+U stream. Format arguments are given in a va\+\_\+list instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Format} & Format string. \\
+\hline
+{\em ap} & Argument list. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group__printf_ga8f2d28f08e5d66db9a14ed70cb1f4220}{}\index{Printf@{Printf}!vsnprintf@{vsnprintf}}
+\index{vsnprintf@{vsnprintf}!Printf@{Printf}}
+\subsubsection[{vsnprintf(char $\ast$p\+Str, size\+\_\+t length, const char $\ast$p\+Format, va\+\_\+list ap)}]{\setlength{\rightskip}{0pt plus 5cm}signed int vsnprintf (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{p\+Str, }
+\item[{size\+\_\+t}]{length, }
+\item[{const char $\ast$}]{p\+Format, }
+\item[{va\+\_\+list}]{ap}
+\end{DoxyParamCaption}
+)}\label{group__printf_ga8f2d28f08e5d66db9a14ed70cb1f4220}
+
+
+Stores the result of a formatted string into another string. Format arguments are given in a va\+\_\+list instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Str} & Destination string. \\
+\hline
+{\em length} & Length of Destination string. \\
+\hline
+{\em p\+Format} & Format string. \\
+\hline
+{\em ap} & Argument list.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of characters written. 
+\end{DoxyReturn}
+\hypertarget{group__printf_gac2bd6c4c9ad1b563bdcd20f18a36811a}{}\index{Printf@{Printf}!vsprintf@{vsprintf}}
+\index{vsprintf@{vsprintf}!Printf@{Printf}}
+\subsubsection[{vsprintf(char $\ast$p\+String, const char $\ast$p\+Format, va\+\_\+list ap)}]{\setlength{\rightskip}{0pt plus 5cm}signed int vsprintf (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{p\+String, }
+\item[{const char $\ast$}]{p\+Format, }
+\item[{va\+\_\+list}]{ap}
+\end{DoxyParamCaption}
+)}\label{group__printf_gac2bd6c4c9ad1b563bdcd20f18a36811a}
+
+
+Stores the result of a formatted string into another string. Format arguments are given in a va\+\_\+list instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+String} & Destination string. \\
+\hline
+{\em length} & Length of Destination string. \\
+\hline
+{\em p\+Format} & Format string. \\
+\hline
+{\em ap} & Argument list.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of characters written. 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\hypertarget{group__printf_ga933442104e916763ad534cd32e42bbae}{}\index{Printf@{Printf}!r@{r}}
+\index{r@{r}!Printf@{Printf}}
+\subsubsection[{r}]{\setlength{\rightskip}{0pt plus 5cm}struct \+\_\+reent r = \{0, (F\+I\+L\+E $\ast$) 0, (F\+I\+L\+E $\ast$) 1, (F\+I\+L\+E $\ast$) 0\}}\label{group__printf_ga933442104e916763ad534cd32e42bbae}
+Required for proper compilation. 

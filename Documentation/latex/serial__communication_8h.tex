@@ -1,0 +1,28 @@
+\hypertarget{serial__communication_8h}{}\section{C\+:/\+Users/michael/\+Dropbox/6. Semester/\+Bachelor Arbeit/\+S\+T\+M32\+F4\+\_\+\+Datenlogger/\+Source\+Code/serial\+\_\+communication.h File Reference}
+\label{serial__communication_8h}\index{C\+:/\+Users/michael/\+Dropbox/6. Semester/\+Bachelor Arbeit/\+S\+T\+M32\+F4\+\_\+\+Datenlogger/\+Source\+Code/serial\+\_\+communication.\+h@{C\+:/\+Users/michael/\+Dropbox/6. Semester/\+Bachelor Arbeit/\+S\+T\+M32\+F4\+\_\+\+Datenlogger/\+Source\+Code/serial\+\_\+communication.\+h}}
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}file\+\_\+handler.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}led.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}tm\+\_\+stm32f4\+\_\+usart.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}tm\+\_\+stm32f4\+\_\+usart\+\_\+dma.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}tm\+\_\+stm32f4\+\_\+gpio.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}tm\+\_\+stm32f4\+\_\+rtc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}stdint.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__serial__communication_ga7105ae13077efe98fe046a85c40814d5}{T\+M\+\_\+\+U\+S\+A\+R\+T1\+\_\+\+Receive\+Handler} (uint8\+\_\+t c)
+\begin{DoxyCompactList}\small\item\em The U\+S\+A\+R\+T1 receive interrupt handler. Buffers any received data until a carriage return or line feed in received, after which the buffered data is processed. If more than the max. allows chars are received without a C\+R or L\+F, the buffer is emptied. \end{DoxyCompactList}\item 
+static void \hyperlink{group__serial__communication_ga0623c99dae0c534b9d2a008be41572e8}{serial\+\_\+command\+\_\+handler} ()
+\begin{DoxyCompactList}\small\item\em Calling this function will compare the received data against a list of known commands. If a match is found, the command is processed. If no match is found \char`\"{}command error\char`\"{} is sent to the serial port and the buffer is emptied. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+8888888888\+P d8888 8888888b. 888b d888 $\vert$ Zentrum für d88\+P d88888 888 Y88b 8888b d8888 $\vert$ Angewandte d88\+P d88\+P888 888 888 88888b.\+d88888 $\vert$ Raumfahrtechnologie d88\+P d88\+P 888 888 d88\+P 888\+Y88888\+P888 $\vert$ und Mikrogravitation d88\+P d88\+P 888 8888888\+P" 888 Y888\+P 888 $\vert$-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/------ d88\+P d88\+P 888 888 T88b 888 Y8\+P 888 $\vert$ Center of Applied Space d88\+P d8888888888 888 T88b 888 " 888 $\vert$ Technology and d8888888888 d88\+P 888 888 T88b 888 888 $\vert$ Microgravity
+
+\begin{DoxyAuthor}{Author}
+Michael A. Schulze  \href{mailto:m.schulze@uni-bremen.de}{\tt m.\+schulze@uni-\/bremen.\+de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+v1.\+0, compiled with arm-\/none-\/eabi-\/gcc v4.\+9.\+3 20150303 
+\end{DoxyVersion}

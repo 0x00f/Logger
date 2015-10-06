@@ -1,0 +1,197 @@
+\hypertarget{group__system}{}\section{System}
+\label{group__system}\index{System@{System}}
+
+
+Implements system init(), post() and N\+V\+S\+R\+A\+M access functions.  
+
+
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__system_gaad363db1fc3eedc68c27a8ce277bbb5e}{}\#define {\bfseries sample\+\_\+rate\+\_\+address}~0x00\label{group__system_gaad363db1fc3eedc68c27a8ce277bbb5e}
+
+\item 
+\hypertarget{group__system_ga378eaa994ca7256adbe5a4f5c2480543}{}\#define {\bfseries logged\+\_\+channels\+\_\+address}~0x02\label{group__system_ga378eaa994ca7256adbe5a4f5c2480543}
+
+\item 
+\hypertarget{group__system_gadeefcb6ed4e46bce11baf5221a83416d}{}\#define {\bfseries measurement\+\_\+name\+\_\+address}~0x03\label{group__system_gadeefcb6ed4e46bce11baf5221a83416d}
+
+\item 
+\hypertarget{group__system_gad1724fdab64f4d133f6236d75656ca05}{}\#define {\bfseries max\+\_\+filename\+\_\+len}~0x14\label{group__system_gad1724fdab64f4d133f6236d75656ca05}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__system_gafeac06fb8e1e94bfba7df88a6e219d71}{S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+T\+E} \{ {\bfseries S\+T\+A\+R\+T\+U\+P}, 
+{\bfseries P\+O\+S\+T}, 
+{\bfseries S\+T\+A\+N\+D\+B\+Y}, 
+{\bfseries H\+W\+\_\+\+F\+A\+U\+L\+T}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \hyperlink{group__system_ga9635ffa654efc23cfeb69139d77e83be}{Get\+\_\+\+Sample\+\_\+\+Rate} ()
+\begin{DoxyCompactList}\small\item\em A single function to initialize the system, all peripherals and G\+P\+I\+O with a single function call. \end{DoxyCompactList}\item 
+\hyperlink{group__max11060_ga2a33837c760006578f634282dafeeee8}{M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Sample\+Rate\+\_\+t} \hyperlink{group__system_gab966eb544f76e369a5c194e2d246995e}{Get\+\_\+\+Sample\+\_\+\+Rate\+\_\+\+Conf} ()
+\item 
+void \hyperlink{group__system_ga1283397b79ed1a9932dfb5673ffa81b5}{Set\+\_\+\+Sample\+\_\+\+Rate} (uint16\+\_\+t sample\+\_\+rate)
+\begin{DoxyCompactList}\small\item\em System Init(). A single function to initialize the system, all peripherals and G\+P\+I\+O with a single function call. \end{DoxyCompactList}\item 
+\hyperlink{group__system_gafeac06fb8e1e94bfba7df88a6e219d71}{S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+T\+E} \hyperlink{group__system_ga140103062d2e414b6b642ffedb3bb03a}{Logger\+\_\+\+System\+\_\+\+Init} ()
+\begin{DoxyCompactList}\small\item\em System Init(). A single function to initialize the system, all peripherals and G\+P\+I\+O with a single function call. \end{DoxyCompactList}\item 
+\hyperlink{group__system_gafeac06fb8e1e94bfba7df88a6e219d71}{S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+T\+E} \hyperlink{group__system_ga189a2877aaf3e09f63623f62061d4a42}{Logger\+\_\+\+System\+\_\+\+P\+O\+S\+T} ()
+\begin{DoxyCompactList}\small\item\em P\+O\+S\+T -\/ Power On Self Test Checks that S\+D card is mounted and A\+D\+C\textquotesingle{}s are properly configured and responding This is called after \hyperlink{group__system_ga140103062d2e414b6b642ffedb3bb03a}{Logger\+\_\+\+System\+\_\+\+Init()}! \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{group__system_ga2569d7058f4b3f9116753afde8ad67bf}{Get\+\_\+\+Measurement\+\_\+\+Name} (char $\ast$dest\+\_\+buffer)
+\begin{DoxyCompactList}\small\item\em Generates a filename string from user configurable N\+V\+S\+R\+A\+M data. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{group__system_gafed20234a1df1a20f9ba724cf8d94bcb}{Set\+\_\+\+Measurement\+\_\+\+Name} (const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Writes new filename string into the N\+V\+S\+R\+A\+M. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implements system init(), post() and N\+V\+S\+R\+A\+M access functions. 
+
+All reads and write to N\+V\+S\+R\+A\+M are handled here. 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{group__system_gafeac06fb8e1e94bfba7df88a6e219d71}{}\index{System@{System}!S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+T\+E@{S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+T\+E}}
+\index{S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+T\+E@{S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+T\+E}!System@{System}}
+\subsubsection[{S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+T\+E}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+T\+E}}\label{group__system_gafeac06fb8e1e94bfba7df88a6e219d71}
+Enum of possible system states. They are cycled in state machine fashion Startup is the state after power up and before init() and post() functions are 
+
+\subsection{Function Documentation}
+\hypertarget{group__system_ga2569d7058f4b3f9116753afde8ad67bf}{}\index{System@{System}!Get\+\_\+\+Measurement\+\_\+\+Name@{Get\+\_\+\+Measurement\+\_\+\+Name}}
+\index{Get\+\_\+\+Measurement\+\_\+\+Name@{Get\+\_\+\+Measurement\+\_\+\+Name}!System@{System}}
+\subsubsection[{Get\+\_\+\+Measurement\+\_\+\+Name(char $\ast$dest\+\_\+buffer)}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Get\+\_\+\+Measurement\+\_\+\+Name (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{dest\+\_\+buffer}
+\end{DoxyParamCaption}
+)}\label{group__system_ga2569d7058f4b3f9116753afde8ad67bf}
+
+
+Generates a filename string from user configurable N\+V\+S\+R\+A\+M data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & to char array where the data will be written \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em number} & of characters in the generated filename string \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group__system_ga9635ffa654efc23cfeb69139d77e83be}{}\index{System@{System}!Get\+\_\+\+Sample\+\_\+\+Rate@{Get\+\_\+\+Sample\+\_\+\+Rate}}
+\index{Get\+\_\+\+Sample\+\_\+\+Rate@{Get\+\_\+\+Sample\+\_\+\+Rate}!System@{System}}
+\subsubsection[{Get\+\_\+\+Sample\+\_\+\+Rate()}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Get\+\_\+\+Sample\+\_\+\+Rate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{group__system_ga9635ffa654efc23cfeb69139d77e83be}
+
+
+A single function to initialize the system, all peripherals and G\+P\+I\+O with a single function call. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em current} & state from S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+T\+E enum \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group__system_gab966eb544f76e369a5c194e2d246995e}{}\index{System@{System}!Get\+\_\+\+Sample\+\_\+\+Rate\+\_\+\+Conf@{Get\+\_\+\+Sample\+\_\+\+Rate\+\_\+\+Conf}}
+\index{Get\+\_\+\+Sample\+\_\+\+Rate\+\_\+\+Conf@{Get\+\_\+\+Sample\+\_\+\+Rate\+\_\+\+Conf}!System@{System}}
+\subsubsection[{Get\+\_\+\+Sample\+\_\+\+Rate\+\_\+\+Conf()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Sample\+Rate\+\_\+t} Get\+\_\+\+Sample\+\_\+\+Rate\+\_\+\+Conf (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{group__system_gab966eb544f76e369a5c194e2d246995e}
+The Sample\+\_\+\+Rate\+\_\+t is needed by the the A\+D\+C driver, which requires a specially calculated configuration word, not just a regular number. Default rate if an unsupported rate is read from N\+V\+S\+R\+A\+M is 10ksps. \hypertarget{group__system_ga140103062d2e414b6b642ffedb3bb03a}{}\index{System@{System}!Logger\+\_\+\+System\+\_\+\+Init@{Logger\+\_\+\+System\+\_\+\+Init}}
+\index{Logger\+\_\+\+System\+\_\+\+Init@{Logger\+\_\+\+System\+\_\+\+Init}!System@{System}}
+\subsubsection[{Logger\+\_\+\+System\+\_\+\+Init()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+T\+E} Logger\+\_\+\+System\+\_\+\+Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{group__system_ga140103062d2e414b6b642ffedb3bb03a}
+
+
+System Init(). A single function to initialize the system, all peripherals and G\+P\+I\+O with a single function call. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em current} & state from S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+T\+E enum \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group__system_ga189a2877aaf3e09f63623f62061d4a42}{}\index{System@{System}!Logger\+\_\+\+System\+\_\+\+P\+O\+S\+T@{Logger\+\_\+\+System\+\_\+\+P\+O\+S\+T}}
+\index{Logger\+\_\+\+System\+\_\+\+P\+O\+S\+T@{Logger\+\_\+\+System\+\_\+\+P\+O\+S\+T}!System@{System}}
+\subsubsection[{Logger\+\_\+\+System\+\_\+\+P\+O\+S\+T()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+T\+E} Logger\+\_\+\+System\+\_\+\+P\+O\+S\+T (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{group__system_ga189a2877aaf3e09f63623f62061d4a42}
+
+
+P\+O\+S\+T -\/ Power On Self Test Checks that S\+D card is mounted and A\+D\+C\textquotesingle{}s are properly configured and responding This is called after \hyperlink{group__system_ga140103062d2e414b6b642ffedb3bb03a}{Logger\+\_\+\+System\+\_\+\+Init()}! 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em H\+W\+\_\+\+F\+A\+U\+L\+T} & if hardware does not respond as expected \\
+\hline
+{\em S\+T\+A\+N\+D\+Y\+B\+Y} & if P\+O\+S\+T is successful \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group__system_gafed20234a1df1a20f9ba724cf8d94bcb}{}\index{System@{System}!Set\+\_\+\+Measurement\+\_\+\+Name@{Set\+\_\+\+Measurement\+\_\+\+Name}}
+\index{Set\+\_\+\+Measurement\+\_\+\+Name@{Set\+\_\+\+Measurement\+\_\+\+Name}!System@{System}}
+\subsubsection[{Set\+\_\+\+Measurement\+\_\+\+Name(const char $\ast$name)}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Set\+\_\+\+Measurement\+\_\+\+Name (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\label{group__system_gafed20234a1df1a20f9ba724cf8d94bcb}
+
+
+Writes new filename string into the N\+V\+S\+R\+A\+M. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & to array containing \textquotesingle{}\textbackslash{}0\textquotesingle{} terminated string to be written \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Number} & of characters written to N\+V\+S\+R\+A\+M. \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group__system_ga1283397b79ed1a9932dfb5673ffa81b5}{}\index{System@{System}!Set\+\_\+\+Sample\+\_\+\+Rate@{Set\+\_\+\+Sample\+\_\+\+Rate}}
+\index{Set\+\_\+\+Sample\+\_\+\+Rate@{Set\+\_\+\+Sample\+\_\+\+Rate}!System@{System}}
+\subsubsection[{Set\+\_\+\+Sample\+\_\+\+Rate(uint16\+\_\+t sample\+\_\+rate)}]{\setlength{\rightskip}{0pt plus 5cm}void Set\+\_\+\+Sample\+\_\+\+Rate (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{sample\+\_\+rate}
+\end{DoxyParamCaption}
+)}\label{group__system_ga1283397b79ed1a9932dfb5673ffa81b5}
+
+
+System Init(). A single function to initialize the system, all peripherals and G\+P\+I\+O with a single function call. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em current} & state from S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+T\+E enum \\
+\hline
+\end{DoxyRetVals}

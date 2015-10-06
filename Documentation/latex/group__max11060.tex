@@ -1,0 +1,222 @@
+\hypertarget{group__max11060}{}\section{Max11060}
+\label{group__max11060}\index{Max11060@{Max11060}}
+
+
+Driver module for the max11060 analog to digital converters.  
+
+
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__max11060_gaffcc56499bb0193fc4969fc91c45b0bc}{}\#define {\bfseries M\+A\+X11060\+\_\+\+S\+P\+I}~S\+P\+I2\label{group__max11060_gaffcc56499bb0193fc4969fc91c45b0bc}
+
+\item 
+\hypertarget{group__max11060_ga7a1d4472ae42f42a6b9c61807a67d4eb}{}\#define {\bfseries M\+A\+X11060\+\_\+\+S\+P\+I\+\_\+\+P\+I\+N\+S\+P\+A\+C\+K}~T\+M\+\_\+\+S\+P\+I\+\_\+\+Pins\+Pack\+\_\+1\label{group__max11060_ga7a1d4472ae42f42a6b9c61807a67d4eb}
+
+\item 
+\hypertarget{group__max11060_ga7fc0995cf0e78423f9755d99935af928}{}\#define {\bfseries M\+A\+X11060\+\_\+\+C\+S\+\_\+\+P\+O\+R\+T}~G\+P\+I\+O\+B\label{group__max11060_ga7fc0995cf0e78423f9755d99935af928}
+
+\item 
+\hypertarget{group__max11060_ga7f1c29b9c4838194bd42d31389355eea}{}\#define {\bfseries M\+A\+X11060\+\_\+\+C\+S\+\_\+\+P\+I\+N}~G\+P\+I\+O\+\_\+\+Pin\+\_\+12\label{group__max11060_ga7f1c29b9c4838194bd42d31389355eea}
+
+\item 
+\hypertarget{group__max11060_ga8e4cde147fdce6487363874f4f8d6fdf}{}\#define {\bfseries M\+A\+X11060\+\_\+\+D\+R\+D\+Y\+O\+U\+T\+\_\+\+P\+O\+R\+T}~G\+P\+I\+O\+E\label{group__max11060_ga8e4cde147fdce6487363874f4f8d6fdf}
+
+\item 
+\hypertarget{group__max11060_ga07afc3e1d8e16995e23037fe4f174b39}{}\#define {\bfseries M\+A\+X11060\+\_\+\+D\+R\+D\+Y\+O\+U\+T\+\_\+\+P\+I\+N}~G\+P\+I\+O\+\_\+\+Pin\+\_\+15\label{group__max11060_ga07afc3e1d8e16995e23037fe4f174b39}
+
+\item 
+\hypertarget{group__max11060_ga47937e5933b0e1ee357c262a4764e784}{}\#define {\bfseries M\+A\+X11060\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+B\+Y\+T\+E}~(uint8\+\_\+t)0x10\label{group__max11060_ga47937e5933b0e1ee357c262a4764e784}
+
+\item 
+\hypertarget{group__max11060_ga6bd1a3a3c4b0e25edcd1809449b16400}{}\#define {\bfseries M\+A\+X11060\+\_\+\+W\+R\+I\+T\+E\+\_\+\+S\+I\+C\+R\+\_\+\+C\+M\+D}~0x40\label{group__max11060_ga6bd1a3a3c4b0e25edcd1809449b16400}
+
+\item 
+\hypertarget{group__max11060_gaba9524692a46eb4ffbc2eb06ce1d046a}{}\#define {\bfseries M\+A\+X11060\+\_\+\+R\+E\+A\+D\+\_\+\+S\+I\+C\+R\+\_\+\+C\+M\+D}~0x\+C0\label{group__max11060_gaba9524692a46eb4ffbc2eb06ce1d046a}
+
+\item 
+\hypertarget{group__max11060_ga58070aaa444671c2a3f2cc754ecdb63c}{}\#define {\bfseries M\+A\+X11060\+\_\+\+W\+R\+I\+T\+E\+\_\+\+D\+R\+C\+R\+\_\+\+C\+M\+D}~0x50\label{group__max11060_ga58070aaa444671c2a3f2cc754ecdb63c}
+
+\item 
+\hypertarget{group__max11060_gace3a0e1b39275ab10c17e327ab46e92f}{}\#define {\bfseries M\+A\+X11060\+\_\+\+R\+E\+A\+D\+\_\+\+D\+R\+C\+R\+\_\+\+C\+M\+D}~0x\+D0\label{group__max11060_gace3a0e1b39275ab10c17e327ab46e92f}
+
+\item 
+\hypertarget{group__max11060_ga071e6433383b79c2c764148e8ee744b1}{}\#define {\bfseries M\+A\+X11060\+\_\+\+W\+R\+I\+T\+E\+\_\+\+C\+R\+\_\+\+C\+M\+D}~0x60\label{group__max11060_ga071e6433383b79c2c764148e8ee744b1}
+
+\item 
+\hypertarget{group__max11060_ga59586c5c5905a870f422f20597ec52f7}{}\#define {\bfseries M\+A\+X11060\+\_\+\+R\+E\+A\+D\+\_\+\+C\+R\+\_\+\+C\+M\+D}~0x\+E0\label{group__max11060_ga59586c5c5905a870f422f20597ec52f7}
+
+\item 
+\hypertarget{group__max11060_gaa82bd943f952486f9b8a3b226fb087b9}{}\#define {\bfseries M\+A\+X11060\+\_\+\+R\+E\+A\+D\+\_\+\+D\+R\+\_\+\+C\+M\+D}~0x\+F0\label{group__max11060_gaa82bd943f952486f9b8a3b226fb087b9}
+
+\item 
+\hypertarget{group__max11060_ga7f0b6cae5408d92d34123ee0e1a90ef5}{}\#define {\bfseries S\+H\+D\+N}~(0x01 $>$$>$ 7)\label{group__max11060_ga7f0b6cae5408d92d34123ee0e1a90ef5}
+
+\item 
+\hypertarget{group__max11060_ga3a6d3cd70078e6046471ec528a09cd19}{}\#define {\bfseries A\+C\+T\+I\+V\+E}~(0x00 $>$$>$ 7)\label{group__max11060_ga3a6d3cd70078e6046471ec528a09cd19}
+
+\item 
+\hypertarget{group__max11060_gac5d957e4fd3dc11cd97a54cf9ca057a4}{}\#define {\bfseries R\+S\+T}~(0x01 $>$$>$ 1)\label{group__max11060_gac5d957e4fd3dc11cd97a54cf9ca057a4}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__max11060_ga2a33837c760006578f634282dafeeee8}{M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Sample\+Rate\+\_\+t} \{ \\*
+{\bfseries M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+S\+P\+S\+\_\+250} = ((uint16\+\_\+t)0x25\+F\+F), 
+{\bfseries M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+S\+P\+S\+\_\+500} = ((uint16\+\_\+t)0x2000), 
+{\bfseries M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+S\+P\+S\+\_\+1\+K} = ((uint16\+\_\+t)0x4000), 
+{\bfseries M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+S\+P\+S\+\_\+2\+K} = ((uint16\+\_\+t)0x6000), 
+\\*
+{\bfseries M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+S\+P\+S\+\_\+4\+K} = ((uint16\+\_\+t)0x8000), 
+{\bfseries M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+S\+P\+S\+\_\+5\+K} = ((uint16\+\_\+t)0x\+A39\+A), 
+{\bfseries M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+S\+P\+S\+\_\+8\+K} = ((uint16\+\_\+t)0x\+A000), 
+{\bfseries M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+S\+P\+S\+\_\+10\+K} = ((uint16\+\_\+t)0x0399), 
+\\*
+{\bfseries M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+S\+P\+S\+\_\+12\+K} = ((uint16\+\_\+t)0x01\+F\+F), 
+{\bfseries M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+S\+P\+S\+\_\+16\+K} = ((uint16\+\_\+t)0x0000), 
+{\bfseries M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+S\+P\+S\+\_\+20\+K} = ((uint16\+\_\+t)0x\+C1\+C\+D), 
+{\bfseries M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+S\+P\+S\+\_\+32\+K} = ((uint16\+\_\+t)0x\+C000), 
+\\*
+{\bfseries M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+S\+P\+S\+\_\+64\+K} = ((uint16\+\_\+t)0x\+E000)
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__max11060_gaa192a4cf5e3a197e0eb9471c19b2a941}{M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Init} (uint8\+\_\+t num\+\_\+adcs)
+\begin{DoxyCompactList}\small\item\em Initializes the A\+D\+C(s) \end{DoxyCompactList}\item 
+void \hyperlink{group__max11060_ga909641b70627de2ed44345926a48f7af}{M\+A\+X11060\+\_\+\+Set\+\_\+\+Sample\+Rate} (\hyperlink{group__max11060_ga2a33837c760006578f634282dafeeee8}{M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Sample\+Rate\+\_\+t} samplerate)
+\begin{DoxyCompactList}\small\item\em Sets the A\+D\+C sample rate of the A\+D\+Cs. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{group__max11060_ga91bf379e0ad34c502ccb60ee71a7dc4d}{M\+A\+X11060\+\_\+\+Read\+\_\+\+Sample\+Rate} ()
+\begin{DoxyCompactList}\small\item\em Returns the currently configured A\+D\+C sample rate. \end{DoxyCompactList}\item 
+\hypertarget{group__max11060_ga5f2f36f5720692abb987eb211265c096}{}void {\bfseries M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Reset} (uint8\+\_\+t adc\+\_\+id)\label{group__max11060_ga5f2f36f5720692abb987eb211265c096}
+
+\item 
+void \hyperlink{group__max11060_gaa01d268c5312e6221cda1434cc8ebb86}{M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Read\+All} (uint8\+\_\+t $\ast$data\+In, uint8\+\_\+t dummy, uint16\+\_\+t count)
+\begin{DoxyCompactList}\small\item\em Returns the current conversion data of the A\+D\+Cs. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{group__max11060_gaea0b3edcc35f98e07218d2c41bc67b0c}{M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Read\+Config} (uint8\+\_\+t nums\+\_\+adcs)
+\begin{DoxyCompactList}\small\item\em Returns current A\+D\+C configuration word. \end{DoxyCompactList}\item 
+\hypertarget{group__max11060_gaa892669ed2e1cd88828155724d5a71f3}{}uint16\+\_\+t {\bfseries M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Read\+Chx} (uint8\+\_\+t channel)\label{group__max11060_gaa892669ed2e1cd88828155724d5a71f3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Driver module for the max11060 analog to digital converters. 
+
+Includes functions for the initialization, configuration, and data transfers to and from the M\+A\+X11060 A\+D\+Cs 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{group__max11060_ga2a33837c760006578f634282dafeeee8}{}\index{Max11060@{Max11060}!M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Sample\+Rate\+\_\+t@{M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Sample\+Rate\+\_\+t}}
+\index{M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Sample\+Rate\+\_\+t@{M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Sample\+Rate\+\_\+t}!Max11060@{Max11060}}
+\subsubsection[{M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Sample\+Rate\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Sample\+Rate\+\_\+t}}\label{group__max11060_ga2a33837c760006578f634282dafeeee8}
+These are the numbers which must be written into the A\+D\+C data rate control registers to generate the corresponding sample rates 
+
+\subsection{Function Documentation}
+\hypertarget{group__max11060_gaa192a4cf5e3a197e0eb9471c19b2a941}{}\index{Max11060@{Max11060}!M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Init@{M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Init}}
+\index{M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Init@{M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Init}!Max11060@{Max11060}}
+\subsubsection[{M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Init(uint8\+\_\+t num\+\_\+adcs)}]{\setlength{\rightskip}{0pt plus 5cm}void M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Init (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{num\+\_\+adcs}
+\end{DoxyParamCaption}
+)}\label{group__max11060_gaa192a4cf5e3a197e0eb9471c19b2a941}
+
+
+Initializes the A\+D\+C(s) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & number of M\+A\+X11060 in the system \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group__max11060_gaa01d268c5312e6221cda1434cc8ebb86}{}\index{Max11060@{Max11060}!M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Read\+All@{M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Read\+All}}
+\index{M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Read\+All@{M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Read\+All}!Max11060@{Max11060}}
+\subsubsection[{M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Read\+All(uint8\+\_\+t $\ast$data\+In, uint8\+\_\+t dummy, uint16\+\_\+t count)}]{\setlength{\rightskip}{0pt plus 5cm}void M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Read\+All (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{data\+In, }
+\item[{uint8\+\_\+t}]{dummy, }
+\item[{uint16\+\_\+t}]{count}
+\end{DoxyParamCaption}
+)}\label{group__max11060_gaa01d268c5312e6221cda1434cc8ebb86}
+
+
+Returns the current conversion data of the A\+D\+Cs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$data\+In} & The destination array where the data will be written \\
+\hline
+{\em dummy} & Default dummy data that will be written out over the S\+P\+I while reading in the data (S\+P\+I is full duplex and can send and receive simultanously. \\
+\hline
+{\em count} & The number of 8 bit reads required to read all the data. Each A\+D\+C has 96bits of information, so to read the data from 2 A\+D\+Cs will require 96bits $\ast$ 2 = 192 / 8 = 24 reads \\
+\hline
+\end{DoxyParams}
+\hypertarget{group__max11060_gaea0b3edcc35f98e07218d2c41bc67b0c}{}\index{Max11060@{Max11060}!M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Read\+Config@{M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Read\+Config}}
+\index{M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Read\+Config@{M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Read\+Config}!Max11060@{Max11060}}
+\subsubsection[{M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Read\+Config(uint8\+\_\+t nums\+\_\+adcs)}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Read\+Config (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{nums\+\_\+adcs}
+\end{DoxyParamCaption}
+)}\label{group__max11060_gaea0b3edcc35f98e07218d2c41bc67b0c}
+
+
+Returns current A\+D\+C configuration word. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Number} & of A\+D\+Cs \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & current configuration \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group__max11060_ga91bf379e0ad34c502ccb60ee71a7dc4d}{}\index{Max11060@{Max11060}!M\+A\+X11060\+\_\+\+Read\+\_\+\+Sample\+Rate@{M\+A\+X11060\+\_\+\+Read\+\_\+\+Sample\+Rate}}
+\index{M\+A\+X11060\+\_\+\+Read\+\_\+\+Sample\+Rate@{M\+A\+X11060\+\_\+\+Read\+\_\+\+Sample\+Rate}!Max11060@{Max11060}}
+\subsubsection[{M\+A\+X11060\+\_\+\+Read\+\_\+\+Sample\+Rate()}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t M\+A\+X11060\+\_\+\+Read\+\_\+\+Sample\+Rate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{group__max11060_ga91bf379e0ad34c502ccb60ee71a7dc4d}
+
+
+Returns the currently configured A\+D\+C sample rate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em samplerate} & as a uint16\+\_\+t configuration word. \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group__max11060_ga909641b70627de2ed44345926a48f7af}{}\index{Max11060@{Max11060}!M\+A\+X11060\+\_\+\+Set\+\_\+\+Sample\+Rate@{M\+A\+X11060\+\_\+\+Set\+\_\+\+Sample\+Rate}}
+\index{M\+A\+X11060\+\_\+\+Set\+\_\+\+Sample\+Rate@{M\+A\+X11060\+\_\+\+Set\+\_\+\+Sample\+Rate}!Max11060@{Max11060}}
+\subsubsection[{M\+A\+X11060\+\_\+\+Set\+\_\+\+Sample\+Rate(\+M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Sample\+Rate\+\_\+t samplerate)}]{\setlength{\rightskip}{0pt plus 5cm}void M\+A\+X11060\+\_\+\+Set\+\_\+\+Sample\+Rate (
+\begin{DoxyParamCaption}
+\item[{{\bf M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Sample\+Rate\+\_\+t}}]{samplerate}
+\end{DoxyParamCaption}
+)}\label{group__max11060_ga909641b70627de2ed44345926a48f7af}
+
+
+Sets the A\+D\+C sample rate of the A\+D\+Cs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em samplerate} & enum corresponding to the required sample rate \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}

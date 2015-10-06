@@ -1,0 +1,64 @@
+\hypertarget{group__serial__communication}{}\section{Serial\+\_\+communication}
+\label{group__serial__communication}\index{Serial\+\_\+communication@{Serial\+\_\+communication}}
+
+
+Receives, processes and generates all serial U\+S\+A\+R\+T data.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__serial__communication_ga7105ae13077efe98fe046a85c40814d5}{T\+M\+\_\+\+U\+S\+A\+R\+T1\+\_\+\+Receive\+Handler} (uint8\+\_\+t c)
+\begin{DoxyCompactList}\small\item\em The U\+S\+A\+R\+T1 receive interrupt handler. Buffers any received data until a carriage return or line feed in received, after which the buffered data is processed. If more than the max. allows chars are received without a C\+R or L\+F, the buffer is emptied. \end{DoxyCompactList}\item 
+static void \hyperlink{group__serial__communication_ga0623c99dae0c534b9d2a008be41572e8}{serial\+\_\+command\+\_\+handler} ()
+\begin{DoxyCompactList}\small\item\em Calling this function will compare the received data against a list of known commands. If a match is found, the command is processed. If no match is found \char`\"{}command error\char`\"{} is sent to the serial port and the buffer is emptied. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Receives, processes and generates all serial U\+S\+A\+R\+T data. 
+
+The U\+S\+A\+R\+T receive interrupt handler, and functions to respond to any serial commands are implemented here 
+
+\subsection{Function Documentation}
+\hypertarget{group__serial__communication_ga0623c99dae0c534b9d2a008be41572e8}{}\index{Serial\+\_\+communication@{Serial\+\_\+communication}!serial\+\_\+command\+\_\+handler@{serial\+\_\+command\+\_\+handler}}
+\index{serial\+\_\+command\+\_\+handler@{serial\+\_\+command\+\_\+handler}!Serial\+\_\+communication@{Serial\+\_\+communication}}
+\subsubsection[{serial\+\_\+command\+\_\+handler()}]{\setlength{\rightskip}{0pt plus 5cm}static void serial\+\_\+command\+\_\+handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{group__serial__communication_ga0623c99dae0c534b9d2a008be41572e8}
+
+
+Calling this function will compare the received data against a list of known commands. If a match is found, the command is processed. If no match is found \char`\"{}command error\char`\"{} is sent to the serial port and the buffer is emptied. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group__serial__communication_ga7105ae13077efe98fe046a85c40814d5}{}\index{Serial\+\_\+communication@{Serial\+\_\+communication}!T\+M\+\_\+\+U\+S\+A\+R\+T1\+\_\+\+Receive\+Handler@{T\+M\+\_\+\+U\+S\+A\+R\+T1\+\_\+\+Receive\+Handler}}
+\index{T\+M\+\_\+\+U\+S\+A\+R\+T1\+\_\+\+Receive\+Handler@{T\+M\+\_\+\+U\+S\+A\+R\+T1\+\_\+\+Receive\+Handler}!Serial\+\_\+communication@{Serial\+\_\+communication}}
+\subsubsection[{T\+M\+\_\+\+U\+S\+A\+R\+T1\+\_\+\+Receive\+Handler(uint8\+\_\+t c)}]{\setlength{\rightskip}{0pt plus 5cm}void T\+M\+\_\+\+U\+S\+A\+R\+T1\+\_\+\+Receive\+Handler (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{c}
+\end{DoxyParamCaption}
+)}\label{group__serial__communication_ga7105ae13077efe98fe046a85c40814d5}
+
+
+The U\+S\+A\+R\+T1 receive interrupt handler. Buffers any received data until a carriage return or line feed in received, after which the buffered data is processed. If more than the max. allows chars are received without a C\+R or L\+F, the buffer is emptied. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & The received character \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}

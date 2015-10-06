@@ -1,0 +1,129 @@
+\hypertarget{group__file__handler}{}\section{File\+\_\+handler}
+\label{group__file__handler}\index{File\+\_\+handler@{File\+\_\+handler}}
+
+
+Generates filename strings for each new measurement file.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{group__file__handler_ga9efd801bbf5576d6f09ebb7281fd4d4c}{Mount\+\_\+\+File\+\_\+\+System} ()
+\begin{DoxyCompactList}\small\item\em Checks if a file system can be mounted on external flash. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{group__file__handler_ga8dca3491a9ab267d90657e7d1f76c8b1}{Get\+\_\+\+File\+System\+\_\+\+Label} ()
+\begin{DoxyCompactList}\small\item\em Returns the name of the file system (label) sd card. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{group__file__handler_ga891f0548fd983c0af10d8d38e45f6aaa}{Gen\+\_\+\+Filename} ()
+\begin{DoxyCompactList}\small\item\em Generates a new filename for a new measurement. It either retrieves the filename from backup sram, or if sram is not initialized, uses the default \char`\"{}measurement\char`\"{}. The filename has the format\+: \char`\"{}filename\char`\"{}\+\_\+n, where n is an integer that is incremented for each new measurement. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{group__file__handler_ga3422415ffcfdb9ea67c40899bb673a05}{Get\+\_\+\+All\+\_\+\+Filenames} ()
+\begin{DoxyCompactList}\small\item\em Generates a list of filenames of all found files. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{group__file__handler_ga4668281938481f362ee46f7bbf829efc}{volume} \mbox{[}15\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Generates filename strings for each new measurement file. 
+
+Uses the system module to get user filename data from N\+V\+S\+R\+A\+M 
+
+\subsection{Function Documentation}
+\hypertarget{group__file__handler_ga891f0548fd983c0af10d8d38e45f6aaa}{}\index{File\+\_\+handler@{File\+\_\+handler}!Gen\+\_\+\+Filename@{Gen\+\_\+\+Filename}}
+\index{Gen\+\_\+\+Filename@{Gen\+\_\+\+Filename}!File\+\_\+handler@{File\+\_\+handler}}
+\subsubsection[{Gen\+\_\+\+Filename()}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Gen\+\_\+\+Filename (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{group__file__handler_ga891f0548fd983c0af10d8d38e45f6aaa}
+
+
+Generates a new filename for a new measurement. It either retrieves the filename from backup sram, or if sram is not initialized, uses the default \char`\"{}measurement\char`\"{}. The filename has the format\+: \char`\"{}filename\char`\"{}\+\_\+n, where n is an integer that is incremented for each new measurement. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Pointer} & to the new char array containing the filename \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group__file__handler_ga3422415ffcfdb9ea67c40899bb673a05}{}\index{File\+\_\+handler@{File\+\_\+handler}!Get\+\_\+\+All\+\_\+\+Filenames@{Get\+\_\+\+All\+\_\+\+Filenames}}
+\index{Get\+\_\+\+All\+\_\+\+Filenames@{Get\+\_\+\+All\+\_\+\+Filenames}!File\+\_\+handler@{File\+\_\+handler}}
+\subsubsection[{Get\+\_\+\+All\+\_\+\+Filenames()}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Get\+\_\+\+All\+\_\+\+Filenames (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{group__file__handler_ga3422415ffcfdb9ea67c40899bb673a05}
+
+
+Generates a list of filenames of all found files. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Pointer} & to the new char array \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group__file__handler_ga8dca3491a9ab267d90657e7d1f76c8b1}{}\index{File\+\_\+handler@{File\+\_\+handler}!Get\+\_\+\+File\+System\+\_\+\+Label@{Get\+\_\+\+File\+System\+\_\+\+Label}}
+\index{Get\+\_\+\+File\+System\+\_\+\+Label@{Get\+\_\+\+File\+System\+\_\+\+Label}!File\+\_\+handler@{File\+\_\+handler}}
+\subsubsection[{Get\+\_\+\+File\+System\+\_\+\+Label()}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Get\+\_\+\+File\+System\+\_\+\+Label (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{group__file__handler_ga8dca3491a9ab267d90657e7d1f76c8b1}
+
+
+Returns the name of the file system (label) sd card. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Pointer} & to null terminated string containing the name \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group__file__handler_ga9efd801bbf5576d6f09ebb7281fd4d4c}{}\index{File\+\_\+handler@{File\+\_\+handler}!Mount\+\_\+\+File\+\_\+\+System@{Mount\+\_\+\+File\+\_\+\+System}}
+\index{Mount\+\_\+\+File\+\_\+\+System@{Mount\+\_\+\+File\+\_\+\+System}!File\+\_\+handler@{File\+\_\+handler}}
+\subsubsection[{Mount\+\_\+\+File\+\_\+\+System()}]{\setlength{\rightskip}{0pt plus 5cm}bool Mount\+\_\+\+File\+\_\+\+System (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{group__file__handler_ga9efd801bbf5576d6f09ebb7281fd4d4c}
+
+
+Checks if a file system can be mounted on external flash. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em T\+R\+U\+E} & if mount is successful \\
+\hline
+{\em F\+A\+L\+S\+E} & if not \\
+\hline
+\end{DoxyRetVals}
+
+
+\subsection{Variable Documentation}
+\hypertarget{group__file__handler_ga4668281938481f362ee46f7bbf829efc}{}\index{File\+\_\+handler@{File\+\_\+handler}!volume@{volume}}
+\index{volume@{volume}!File\+\_\+handler@{File\+\_\+handler}}
+\subsubsection[{volume}]{\setlength{\rightskip}{0pt plus 5cm}char volume\mbox{[}15\mbox{]}}\label{group__file__handler_ga4668281938481f362ee46f7bbf829efc}
+Give external modules access to the volume name
+
+
+\begin{DoxyItemize}
+\item \hyperlink{struct_buffer}{Buffer} to store S\+D card volume name $\ast$/ 
+\end{DoxyItemize}

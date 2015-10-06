@@ -1,0 +1,62 @@
+\hypertarget{system_8h}{}\section{C\+:/\+Users/michael/\+Dropbox/6. Semester/\+Bachelor Arbeit/\+S\+T\+M32\+F4\+\_\+\+Datenlogger/\+Source\+Code/system.h File Reference}
+\label{system_8h}\index{C\+:/\+Users/michael/\+Dropbox/6. Semester/\+Bachelor Arbeit/\+S\+T\+M32\+F4\+\_\+\+Datenlogger/\+Source\+Code/system.\+h@{C\+:/\+Users/michael/\+Dropbox/6. Semester/\+Bachelor Arbeit/\+S\+T\+M32\+F4\+\_\+\+Datenlogger/\+Source\+Code/system.\+h}}
+{\ttfamily \#include \char`\"{}tm\+\_\+stm32f4\+\_\+bkpsram.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}tm\+\_\+stm32f4\+\_\+rtc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}M\+A\+X11060.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}file\+\_\+handler.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$ctype.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}stdbool.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__system_gaad363db1fc3eedc68c27a8ce277bbb5e}{}\#define {\bfseries sample\+\_\+rate\+\_\+address}~0x00\label{group__system_gaad363db1fc3eedc68c27a8ce277bbb5e}
+
+\item 
+\hypertarget{group__system_ga378eaa994ca7256adbe5a4f5c2480543}{}\#define {\bfseries logged\+\_\+channels\+\_\+address}~0x02\label{group__system_ga378eaa994ca7256adbe5a4f5c2480543}
+
+\item 
+\hypertarget{group__system_gadeefcb6ed4e46bce11baf5221a83416d}{}\#define {\bfseries measurement\+\_\+name\+\_\+address}~0x03\label{group__system_gadeefcb6ed4e46bce11baf5221a83416d}
+
+\item 
+\hypertarget{group__system_gad1724fdab64f4d133f6236d75656ca05}{}\#define {\bfseries max\+\_\+filename\+\_\+len}~0x14\label{group__system_gad1724fdab64f4d133f6236d75656ca05}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__system_gafeac06fb8e1e94bfba7df88a6e219d71}{S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+T\+E} \{ {\bfseries S\+T\+A\+R\+T\+U\+P}, 
+{\bfseries P\+O\+S\+T}, 
+{\bfseries S\+T\+A\+N\+D\+B\+Y}, 
+{\bfseries H\+W\+\_\+\+F\+A\+U\+L\+T}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \hyperlink{group__system_ga9635ffa654efc23cfeb69139d77e83be}{Get\+\_\+\+Sample\+\_\+\+Rate} ()
+\begin{DoxyCompactList}\small\item\em A single function to initialize the system, all peripherals and G\+P\+I\+O with a single function call. \end{DoxyCompactList}\item 
+\hyperlink{group__max11060_ga2a33837c760006578f634282dafeeee8}{M\+A\+X11060\+\_\+\+A\+D\+C\+\_\+\+Sample\+Rate\+\_\+t} \hyperlink{group__system_gab966eb544f76e369a5c194e2d246995e}{Get\+\_\+\+Sample\+\_\+\+Rate\+\_\+\+Conf} ()
+\item 
+void \hyperlink{group__system_ga1283397b79ed1a9932dfb5673ffa81b5}{Set\+\_\+\+Sample\+\_\+\+Rate} (uint16\+\_\+t sample\+\_\+rate)
+\begin{DoxyCompactList}\small\item\em System Init(). A single function to initialize the system, all peripherals and G\+P\+I\+O with a single function call. \end{DoxyCompactList}\item 
+\hyperlink{group__system_gafeac06fb8e1e94bfba7df88a6e219d71}{S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+T\+E} \hyperlink{group__system_ga140103062d2e414b6b642ffedb3bb03a}{Logger\+\_\+\+System\+\_\+\+Init} ()
+\begin{DoxyCompactList}\small\item\em System Init(). A single function to initialize the system, all peripherals and G\+P\+I\+O with a single function call. \end{DoxyCompactList}\item 
+\hyperlink{group__system_gafeac06fb8e1e94bfba7df88a6e219d71}{S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+T\+E} \hyperlink{group__system_ga189a2877aaf3e09f63623f62061d4a42}{Logger\+\_\+\+System\+\_\+\+P\+O\+S\+T} ()
+\begin{DoxyCompactList}\small\item\em P\+O\+S\+T -\/ Power On Self Test Checks that S\+D card is mounted and A\+D\+C\textquotesingle{}s are properly configured and responding This is called after \hyperlink{group__system_ga140103062d2e414b6b642ffedb3bb03a}{Logger\+\_\+\+System\+\_\+\+Init()}! \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{group__system_ga2569d7058f4b3f9116753afde8ad67bf}{Get\+\_\+\+Measurement\+\_\+\+Name} (char $\ast$dest\+\_\+buffer)
+\begin{DoxyCompactList}\small\item\em Generates a filename string from user configurable N\+V\+S\+R\+A\+M data. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{group__system_gafed20234a1df1a20f9ba724cf8d94bcb}{Set\+\_\+\+Measurement\+\_\+\+Name} (const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Writes new filename string into the N\+V\+S\+R\+A\+M. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Michael A. Schulze  \href{mailto:m.schulze@uni-bremen.de}{\tt m.\+schulze@uni-\/bremen.\+de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+v1.\+0, compiled with arm-\/none-\/eabi-\/gcc v4.\+9.\+3 20150303 
+\end{DoxyVersion}

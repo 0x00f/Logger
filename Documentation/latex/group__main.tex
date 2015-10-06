@@ -1,0 +1,56 @@
+\hypertarget{group__main}{}\section{Main}
+\label{group__main}\index{Main@{Main}}
+
+
+Main thread of the system. External user input and adc data are processed here.  
+
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_buffer}{Buffer}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__main_ga7f32cab7edafc4634a8faa14b3e0042c}{}\#define {\bfseries U\+N\+I\+T\+Y\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+C\+H\+A\+R}(a)~S\+H\+\_\+\+Send\+Char(a)\label{group__main_ga7f32cab7edafc4634a8faa14b3e0042c}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__main_ga818acd0ef479ded56084cebbfb8b1136}{}uint8\+\_\+t buffer\mbox{[}32768\mbox{]} {\bfseries \+\_\+\+\_\+attribute\+\_\+\+\_\+} ((aligned(4)))\label{group__main_ga818acd0ef479ded56084cebbfb8b1136}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__main_gac580b6f60fe65da80a8f235ed3f7c602}{}const char {\bfseries F\+W\+\_\+\+V\+E\+R\+S\+I\+O\+N} \mbox{[}$\,$\mbox{]}\label{group__main_gac580b6f60fe65da80a8f235ed3f7c602}
+
+\item 
+\hypertarget{group__main_ga81ef1a18c6d2e58fa58d50797d5e3840}{}T\+M\+\_\+\+R\+T\+C\+\_\+\+Time\+\_\+t {\bfseries datatime}\label{group__main_ga81ef1a18c6d2e58fa58d50797d5e3840}
+
+\item 
+F\+A\+T\+F\+S \hyperlink{group__main_ga8f47e042c2aca024c6534fdf5c3d9426}{Fat\+Fs}
+\item 
+\hypertarget{group__main_ga5f56222f10a6cb328eaf759e2795117c}{}uint16\+\_\+t {\bfseries w\+\_\+index}\label{group__main_ga5f56222f10a6cb328eaf759e2795117c}
+
+\item 
+\hypertarget{group__main_ga1f1586f3013bbd3b99be7275eec73e76}{}bool {\bfseries is\+Ready}\label{group__main_ga1f1586f3013bbd3b99be7275eec73e76}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main thread of the system. External user input and adc data are processed here. 
+
+This is an interrupt driven loop, with user input toggling between sampling and idle, and the A\+D\+Cs signaling the availability of new data which is then buffered and written to flash. 
+
+\subsection{Variable Documentation}
+\hypertarget{group__main_ga8f47e042c2aca024c6534fdf5c3d9426}{}\index{Main@{Main}!Fat\+Fs@{Fat\+Fs}}
+\index{Fat\+Fs@{Fat\+Fs}!Main@{Main}}
+\subsubsection[{Fat\+Fs}]{\setlength{\rightskip}{0pt plus 5cm}F\+A\+T\+F\+S Fat\+Fs}\label{group__main_ga8f47e042c2aca024c6534fdf5c3d9426}
+
+\begin{DoxyItemize}
+\item Fatfs object -\/ this is the file system which will be mounted $\ast$/ 
+\end{DoxyItemize}
